@@ -30,7 +30,7 @@ class MaquinaNorma:
         return self.registradores[registrador] == 0
     
     def desvio(self, destino):
-        self.pc = destino
+        self.pc = destino - 1
 
     def executar_instrucoes_arquivo(self, nome_arquivo):
         try:
@@ -38,16 +38,28 @@ class MaquinaNorma:
                 linhas = arquivo.readlines()
                 while self.pc <= len(linhas):
                     linha_atual = linhas[self.pc - 1].strip().split()
-
+                    if(len(linha_atual) <= 3):
+                        print(f"Fim do Programa!")
+                        break
                     rotulo = int(linha_atual[0])
                     operacao = linha_atual[1]
                     registrador = linha_atual[2]
-
+                    destino1 = int(linha_atual[3])
                     if operacao == 'ADD':
                         self.add(registrador)
-                    elif operacao == 'JUMP':
-                        destino = int(linha_atual[3])
-                        self.desvio(destino)
+                        self.desvio(destino1)
+                    elif operacao == 'SUB':
+                        self.sub(registrador)
+                        self.desvio(destino1)
+                    elif operacao == 'ZER':                        
+                        self.zer(registrador)
+                        destino2 = int(linha_atual[4])
+                        # a = self.zer(registrador)
+                        # print(a)
+                        if (self.zer(registrador) == True):
+                            self.desvio(destino1)
+                        else:
+                            self.desvio(destino2)
                     else:
                         print(f'Operação desconhecida: {operacao}')
 
@@ -65,10 +77,20 @@ class MaquinaNorma:
 
 
 def main():
-    a = int(input("Digite o valor para o registrador A: "))
-    b = int(input("Digite o valor para o registrador B: "))
-    c = int(input("Digite o valor para o registrador C: "))
-    d = int(input("Digite o valor para o registrador D: ")),
+    # a = int(input("Digite o valor para o registrador A: "))
+    # b = int(input("Digite o valor para o registrador B: "))
+    # c = int(input("Digite o valor para o registrador C: "))
+    # d = int(input("Digite o valor para o registrador D: "))
+
+    a = 2
+    b = 1
+    c = 0
+    d = 0
+
+
+    # arquivo = input("Digite o nome do arquivo a ser usado como input: ")
+
+    arquivo = "soma.txt"
 
     maquina = MaquinaNorma(a,b,c,d)
 
@@ -86,8 +108,10 @@ def main():
     # maquina.soma()
     # maquina.mostrar_registradores()
 
-    maquina.executar_instrucoes_arquivo('programa.txt')
-    maquina.mostrar_registradores()
+    maquina.executar_instrucoes_arquivo(arquivo)
+    # maquina.mostrar_registradores()
+    # maquina.zer("B")
+    # maquina.mostrar_registradores()
 
 
 if __name__ == "__main__":

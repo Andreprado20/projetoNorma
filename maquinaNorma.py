@@ -77,13 +77,13 @@ class MaquinaNorma:
 
 
 def main():
-    # a = int(input("Digite o valor para o registrador A: "))
-    # b = int(input("Digite o valor para o registrador B: "))
+    a = int(input("Digite o valor para o registrador A: "))
+    b = int(input("Digite o valor para o registrador B: "))
     # c = int(input("Digite o valor para o registrador C: "))
     # d = int(input("Digite o valor para o registrador D: "))
 
-    a = 4
-    b = 3
+    # a = 4
+    # b = 3
     c = 0
     d = 0
 

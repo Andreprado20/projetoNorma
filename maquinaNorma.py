@@ -82,15 +82,15 @@ def main():
     # c = int(input("Digite o valor para o registrador C: "))
     # d = int(input("Digite o valor para o registrador D: "))
 
-    a = 2
-    b = 1
+    a = 4
+    b = 3
     c = 0
     d = 0
 
 
     # arquivo = input("Digite o nome do arquivo a ser usado como input: ")
 
-    arquivo = "soma.txt"
+    arquivo = "mult.txt"
 
     maquina = MaquinaNorma(a,b,c,d)
 

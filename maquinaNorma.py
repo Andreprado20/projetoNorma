@@ -91,17 +91,28 @@ def main():
 
         match selecionado:
             case 1:
+                maquina.mostrar_registradores()
                 maquina.add(input("Digite o Registrador a ser incrementado "))
+                maquina.mostrar_registradores()
             case 2:
+                maquina.mostrar_registradores()
                 maquina.soma()
+                maquina.mostrar_registradores()
             case 3:
                 maquina.mult()
+                maquina.mostrar_registradores()
             case 4:
+                maquina.mostrar_registradores()
                 maquina.sub(input("Digite o Registrador a ser decrementado "))
+                maquina.mostrar_registradores()
             case 5:
+                maquina.mostrar_registradores()
                 maquina.subtrair()
+                maquina.mostrar_registradores()
             case 6:
-                maquina.zer(input("Digite o Registrador a ser verificado "))
+                maquina.mostrar_registradores()
+                print(maquina.zer(input("Digite o Registrador a ser verificado ")))
+                maquina.mostrar_registradores()
             case 7:
                 maquina.executar_instrucoes_arquivo(input("Digite o nome do arquivo a ser usado como input: "))
             case 8:

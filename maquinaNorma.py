@@ -75,42 +75,38 @@ class MaquinaNorma:
 
 
 def main():
-    # a = int(input("Digite o valor para o registrador A: "))
-    # b = int(input("Digite o valor para o registrador B: "))
-    # c = int(input("Digite o valor para o registrador C: "))
-    # d = int(input("Digite o valor para o registrador D: "))
+    selecionado = 0
+    while(selecionado < 8):
+        a = int(input("Digite o valor para o registrador A: "))
+        b = int(input("Digite o valor para o registrador B: "))
+        c = 0
+        d = 0
 
-    a = 4
-    b = 0
-    c = 0
-    d = 0
+        maquina = MaquinaNorma(a,b,c,d)
 
+        print(f"--------------------")
+        print(f"Menu")
+        print(f"1 - Função ADD" f"2 - Função Soma" f"")
+        selecionado = int(input(f"Digite a opção desejada: "))
 
-    # arquivo = input("Digite o nome do arquivo a ser usado como input: ")
-
-    arquivo = "fat.txt"
-
-    maquina = MaquinaNorma(a,b,c,d)
-
-    # maquina.add("A")
-    # assert maquina.registradores["A"] == 1
-    # maquina.mostrar_registradores()
-
-    # maquina.sub("B")
-    # assert maquina.registradores["B"] == 0
-    # maquina.mostrar_registradores()
-
-    # # assert maquina.zero("A") is False
-    # # assert maquina.zero("B") is True
-    # maquina.mostrar_registradores()
-    # maquina.soma()
-    # maquina.mostrar_registradores()
-
-    maquina.executar_instrucoes_arquivo(arquivo)
-    # maquina.mostrar_registradores()
-    # maquina.zer("B")
-    # maquina.mostrar_registradores()
-
+        match selecionado:
+            case 1:
+                maquina.add(input("Digite o Registrador a ser incrementado "))
+            case 2:
+                maquina.soma()
+            case 3:
+                maquina.mult()
+            case 4:
+                maquina.sub(input("Digite o Registrador a ser decrementado "))
+            case 5:
+                maquina.subtrair()
+            case 6:
+                maquina.zer(input("Digite o Registrador a ser verificado "))
+            case 7:
+                maquina.executar_instrucoes_arquivo(input("Digite o nome do arquivo a ser usado como input: "))
+            case 8:
+                print(f"Saindo...")
+                break
 
 if __name__ == "__main__":
     main()

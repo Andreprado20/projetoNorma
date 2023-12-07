@@ -6,9 +6,9 @@
 
  - [ ] Este projeto contém dois conjuntos de arquivos: um conjunto contendo apenas um arquivo Python chamado maquinaNorma.py com o código de funcionamento do programa e um outro conjunto de arquivos .txt contendo:
 
- - [ ] **soma.txt** --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz a soma dos valores contidos nos registradores "A" e "B" e armazena o resultado da soma no Registrador "C", deixando os Registradores "A" e "B" zerados após a operação.
+ - **soma.txt** --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz a soma dos valores contidos nos registradores "A" e "B" e armazena o resultado da soma no Registrador "C", deixando os Registradores "A" e "B" zerados após a operação.
 
- - [ ] **mult.txt** --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz a multiplicação dos valores contidos nos registradores "A" e "B" e armazena o produto no Registrador "A", deixando os Registradores "C" e "D" zerados após a operação.
+ - **mult.txt** --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz a multiplicação dos valores contidos nos registradores "A" e "B" e armazena o produto no Registrador "A", deixando os Registradores "C" e "D" zerados após a operação.
 
  - **fat.txt** --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz o cáculo fatorial do valor contido no registrador "A" e armazena o resultado no Registrador "A".
  **OBS: Para que essa função funcione corretamente o usuário deve informar o valor 0 (zero) no Registrador B**

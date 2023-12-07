@@ -11,7 +11,7 @@
  - **mult.txt** --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz a multiplicação dos valores contidos nos registradores "A" e "B" e armazena o produto no Registrador "A", deixando os Registradores "C" e "D" zerados após a operação.
 
  - **fat.txt** --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz o cáculo fatorial do valor contido no registrador "A" e armazena o resultado no Registrador "A".
- **OBS: Para que essa função funcione corretamente o usuário deve informar o valor 0 (zero) no Registrador B**
+ ***OBS: Para que essa função funcione corretamente o usuário deve informar o valor 0 (zero) no Registrador B***
  
  - [ ] O programa em Python vai inicializar os registradores A e B com valores informados pelo usuário e os Registradores C e D com valor igual a 0(zero) e vai executar as instruções contidas no arquivo de Texto escolhido e de acordo com a lógica do programa monolítico contido nele.
 

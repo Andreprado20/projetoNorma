@@ -3,7 +3,31 @@
 ## Descrição:
 
  - [ ] Este Repositório contém um projeto de um simulador de uma Máquina Norma feito na linguagem Python
- - [ ] Este projeto contém dois arquivos: um arquivo chamado maquinaNorma.py com o código de funcionamento do programa e um outro arquivo chamado programa.txt, um arquivo de texto contendo as instruções em formato de um programa monolítico que vão ser um input do programa de Python. O programa em Python vai inicializar os registradores e vai executar as instruções contidas no arquivo de Texto de acordo com a lógica do programa
+
+ - [ ] Este projeto contém dois conjuntos de arquivos: um conjunto contendo apenas um arquivo Python chamado maquinaNorma.py com o código de funcionamento do programa e um outro conjunto de arquivos .txt contendo:
+
+ - [ ] soma.txt --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz a soma dos valores contidos nos registradores "A" e "B" e armazena o resultado da soma no Registrador "C", deixando os Registradores "A" e "B" zerados após a operação.
+
+ - [ ] mult.txt --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz a multiplicação dos valores contidos nos registradores "A" e "B" e armazena o produto no Registrador "A", deixando os Registradores "C" e "D" zerados após a operação.
+
+ - [ ] fat.txt --> um arquivo de texto contendo as instruções em formato de um programa monolítico que faz o cáculo fatorial do valor contido no registrador "A" e armazena o resultado no Registrador "A".
+ **OBS: Para que essa função funcione corretamente o usuário deve informar o valor 0 (zero) no Registrador B**
+ 
+ - [ ] O programa em Python vai inicializar os registradores A e B com valores informados pelo usuário e os Registradores C e D com valor igual a 0(zero) e vai executar as instruções contidas no arquivo de Texto escolhido e de acordo com a lógica do programa monolítico contido nele.
+
+ ## Como usar:
+
+ - [ ] 
+
+ ## Funcionamento:
+
+ - [ ] Essa Máquina Norma executa todas as suas Funções Macro em programas monolíticos baseado apenas em 3 operações báscias: 
+ 
+    | Função |  Descrição  |
+    |-------------|--------|
+    |     ADD     |  Incrementa o valor de um dado Registrador em uma unidade  |
+    |     SUB    | Decrementa o valor de um dado Registrador em uma unidade |
+    |     ZER     | Verifica se o valor de um dado Registrador é igual a Zero ou não |
 
  ## Future Features:
 

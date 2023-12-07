@@ -86,7 +86,14 @@ def main():
 
         print(f"--------------------")
         print(f"Menu")
-        print(f"1 - Função ADD" f"2 - Função Soma" f"")
+        print(f"1 - Função ADD")
+        print(f"2 - Função Soma")
+        print(f"3 - Função Multiplicação")
+        print(f"4 - Função SUB")
+        print(f"5 - Função Subtrair")
+        print(f"6 - Função ZER")
+        print(f"7 - Executar Função de um Programa Monolítico")
+        print(f"8 - Sair")
         selecionado = int(input(f"Digite a opção desejada: "))
 
         match selecionado:

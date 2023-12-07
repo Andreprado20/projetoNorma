@@ -54,8 +54,6 @@ class MaquinaNorma:
                     elif operacao == 'ZER':                        
                         self.zer(registrador)
                         destino2 = int(linha_atual[4])
-                        # a = self.zer(registrador)
-                        # print(a)
                         if (self.zer(registrador) == True):
                             self.desvio(destino1)
                         else:
@@ -77,20 +75,20 @@ class MaquinaNorma:
 
 
 def main():
-    a = int(input("Digite o valor para o registrador A: "))
-    b = int(input("Digite o valor para o registrador B: "))
+    # a = int(input("Digite o valor para o registrador A: "))
+    # b = int(input("Digite o valor para o registrador B: "))
     # c = int(input("Digite o valor para o registrador C: "))
     # d = int(input("Digite o valor para o registrador D: "))
 
-    # a = 4
-    # b = 3
+    a = 4
+    b = 0
     c = 0
     d = 0
 
 
     # arquivo = input("Digite o nome do arquivo a ser usado como input: ")
 
-    arquivo = "mult.txt"
+    arquivo = "fat.txt"
 
     maquina = MaquinaNorma(a,b,c,d)
 
